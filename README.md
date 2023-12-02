@@ -37,7 +37,7 @@ Saída:
 -   ‘var’ → CM_VAR
 -   ‘int’ → TYPE_INT
 -   ‘a’ → ID
--   b’ → ID
+-   ‘b’ → ID
 -   ‘;’ → DELIM
 -   'if' → CM_IF
 -   '(' → DELIM
