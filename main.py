@@ -1,3 +1,5 @@
+# Nome: Thiago F. Santos
+
 import re
 from specs import spec
 
@@ -9,15 +11,15 @@ class Analysis:
         self.getToken = re.compile(self.tok).match
         
         while(True):
-            userInput = input("\nDigite a entrada para o analisador lexico: ")
+            userInput = input("Digite a entrada para o analisador lexico: ")
             
             print("\nResultado:")
             for token in self.lexico(userInput):
                 print(token)
-
             
-           
+            print("\n")
 
+        
     def lexico(self,codigo):
         #  aplica o <match> do <getToken> para procurar um padrão
         #  na string <codigo> a partir da posição 0;
