@@ -22,7 +22,6 @@ class Analysis:
         
     def lexico(self,codigo):
         #  aplica o <match> do <getToken> para procurar um padrão
-        #  na string <codigo> a partir da posição 0;
         val=self.getToken(codigo,0)
         
         while val is not None:
@@ -32,7 +31,12 @@ class Analysis:
             yield('TOKEN: %s\t VAL: %s' %(token, lexema)) # retorna a estrutura
           pos = val.end()       # Reposiciona o próximo símbolo a ser testado
           val=self.getToken(codigo,pos) # Aplica o <match> para a sequencia
-        return token, lexema
+        
+        if "token" in locals() and "lexema" in locals():
+          return token, lexema
+        else:
+          print("\nNão foi encontrado nenhum padrão para essa entrada. Tente novamente.")
+          return None
 
 
 if __name__ == '__main__':

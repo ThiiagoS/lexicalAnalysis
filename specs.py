@@ -6,12 +6,12 @@ spec = [
     ('OP_MULT', r'\*'),
     ('OP_DIV', r'\/'),
     ('OP_EXP', r'\^'),
-    ('OP_GT', r'>'),
     ('OP_GTE', r'>='),
-    ('OP_ST', r'<'),
     ('OP_STE', r'<='),
     ('OP_E', r'=='),
     ('OP_D', r'!='),
+    ('OP_GT', r'>'),
+    ('OP_ST', r'<'),
     ('CM_IF', r'if'),
     ('CM_ELSE', r'else'),
     ('CM_WHILE', r'while'),
@@ -19,7 +19,7 @@ spec = [
     ('TYPE_INT', r'int'),
     ('TYPE_REAL', r'real'),
     ('CM_ATRIB', r'='),
-    ('ID', r'[A-Z|a-z|0-9]+'),
+    ('ID', r'[A-Z|a-z|]([A-Z|a-z|0-9]+)?'),
     ('SKIP', r'[ \n\t\r]'),
 ]
 
