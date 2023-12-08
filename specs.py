@@ -20,7 +20,6 @@ spec = [
     ('TYPE_REAL', r'real'),
     ('CM_ATRIB', r'='),
     ('ID', r'[A-Z|a-z|]([A-Z|a-z|0-9]+)?'),
+    ('LETTERS', r'[A-Za-z]+'),
     ('SKIP', r'[ \n\t\r]'),
 ]
-
-# ('LETTERS', r'[A-Za-z]+'),
